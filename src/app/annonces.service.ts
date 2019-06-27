@@ -18,7 +18,7 @@ export class AnnoncesService {
   }
 
   getAnnonce(id): Observable<Annonce> {
-    let url = 'https://www.covoiturage-simple.com/api/demo/annonces/'+id;
+    let url = 'https://www.covoiturage-simple.com/api/epicerie/annonces/'+id;
     console.log('ajaxcall on :'+url);
     return this.http.get<Annonce>(url);
   }

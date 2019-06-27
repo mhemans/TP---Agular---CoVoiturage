@@ -1,5 +1,52 @@
-<h3>Ajouter annonce</h3>
-<div class="formidable">
-
-
-</div>
+<h3>Crée une annonce</h3>
+ 
+<form [formGroup]="annonceForm" (ngSubmit)="onSubmit(annonceForm.value)">
+ 
+    <div>
+        <label>Nom</label>
+        <input type="text" formControlName="authorname">
+    </div>
+    <div>
+        <label>Age</label>
+        <input type="text" formControlName="authorage">
+    </div>
+    <div>
+        <label>Genre</label>
+        <input type="text" formControlName="authorgender">
+    </div>    
+    <div>
+        <label>Nombre de places</label>
+        <input type="text" formControlName="numberofseats">
+    </div>
+    <div>
+        <label>Date & Heure</label>
+        <input type="text" formControlName="rdvdatetime">
+    </div>
+    <div>
+        <label>De</label>
+        <input type="text" formControlName="journeyfrom">
+    </div>
+    <div>
+        <label>Vers</label>
+        <input type="text" formControlName="journeyto">
+    </div>
+    <div>
+        <label>Type d'annonce</label>
+        <input type="text" formControlName="chercheoupropose">
+    </div>
+    <div>
+        <label>Description</label>
+        <input type="text" formControlName="message">
+    </div>
+    <div>
+        <label>Type de contrepartie</label>
+        <input type="text" formControlName="contrepartietype">
+    </div>
+    <div>
+        <label>Description contrepartie</label>
+        <input type="text" formControlName="contrepartiemsg">
+    </div>
+    
+    <button class="button" type="submit">Crée</button>
+  
+</form>
